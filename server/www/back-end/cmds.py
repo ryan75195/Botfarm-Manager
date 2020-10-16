@@ -4,9 +4,9 @@ import pid
 
 process_id = 0
 
-muleEmail = "bsdvarvvaav@gmail.com"
-mulePass = "master75195"
-muleUsername = "quuv"
+muleEmail = ""
+mulePass = ""
+muleUsername = ""
 activeAccounts = {}
 
 def executeCommand(Command):
@@ -34,7 +34,7 @@ def executeCommand(Command):
                     newName += i
             newName += chr(34)
             print(newName)
-            launchMule = f"java -jar ~/Applications/osbot.jar -login ryank645:master75195 -bot {muleEmail}:{mulePass}:0000 -script mule:" + f"{str(newName)}" + " -world " + "301"
+            launchMule = f"java -jar ~/Applications/osbot.jar -login "":"" -bot {muleEmail}:{mulePass}:0000 -script mule:" + f"{str(newName)}" + " -world " + "301"
             process_id = pid.launchBot(pid.getJavaPIDs(), launchMule)
             activeAccounts[muleUsername] = process_id
         return [muleUsername, process_id]
