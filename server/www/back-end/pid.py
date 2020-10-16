@@ -1,8 +1,8 @@
 import os
 
 OSBOT_PATH = "~/Applications/osbot.jar"
-OSBOT_USER = "ryank645"
-OSBOT_PASS = "master75195"
+OSBOT_USER = ""
+OSBOT_PASS = ""
 def getJavaPIDs():
     return str(os.popen("pidof java").read()).replace("\n", '').split(" ")
     # return os.popen("pidof java")
